@@ -1,145 +1,145 @@
 <?php
 
-// define('NAME', 'Koserf');
+// define('NAME', 'Koserf'); // define a constant named NAME
 
-// echo 'hello, koserf';
+// echo 'hello, koserf'; // display/output text
 
-// $name = "Miles";
-// $age = "20";
+// $name = "Miles"; // variable named $name
+// $age = "20"; // variable named $age
 
-// $name = 'Azure';
+// $name = 'Azure'; // change the value of $name
 
-// $stringOne = 'my email is ';
-// $stringTwo = 'k0serf@gmail.com';
+// $stringOne = 'my email is ';  // variable storing a string
+// $stringTwo = 'k0serf@gmail.com';   
 
-// echo $stringOne;
-// echo $stringOne . $stringTwo;
+// echo $stringOne;  
+// echo $stringOne . $stringTwo;  // concatenate/combine two strings
 
-// $name = 'Azure';
+// $name = 'Azure';  // assign value to $name
 
-//echo 'Hey, my name is ' . $name;
+//echo 'Hey, my name is ' . $name;  // concatenate string with variable
 
-// echo "Hey my name is $name"; //diff between double n single quote
+// echo "Hey my name is $name";   // double quotes can directly use variables
 
-//echo "the shark screamed \"whaaaa\"";
-//echo 'the shark screamed "whaaa"';
+//echo "the shark screamed \"whaaaa\"";   // escape double quotes using \"
+//echo 'the shark screamed "whaaa"';  // single quotes can contain double quotes
 
-//echo $name[1];
+//echo $name[1];  // access character at index 1
 
-//echo strlen($name);
-//echo strtoupper($name);
-//echo strtolower($name);
-//echo str_replace('u', 'a', $name);
+//echo strlen($name);  // count number of characters
+//echo strtoupper($name);   // convert string to uppercase
+//echo strtolower($name);  // convert string to lowercase
+//echo str_replace('u', 'a', $name);  // replace 'u' with 'a' in $name
 
-// $radius = 25;
-// $pi = 3.14;
+// $radius = 25;  // variable for radius
+// $pi = 3.14;  // variable for pi
 
-// basic - *, /, +, -, **
+// basic - *, /, +, -, **  // basic arithmetic operators
 
-// echo $pi * $radius ** 2;
+// echo $pi * $radius ** 2;  // calculate pi × radius²
 
 // order of operation ( B I D M A S)
 
-// echo 2 * (4 + 9) / 3;
+// echo 2 * (4 + 9) / 3;   // brackets first, then multiplication/division
 
 // increment & decrement operators
 
-// echo $radius++;
-// echo $radius;
+// echo $radius++;  // display value, then increase by 1
+// echo $radius;  // display new value
 
-// echo $radius--;
+// echo $radius--;  // display value, then decrease by 1
 // echo $radius;
 
 // shorthand operatores
 
-// $age = 20;
+// $age = 20;  // assign 20 to $age
 
-// $age += 10;
+// $age += 10; // same as $age = $age + 10
 // echo $age;
 
-// $age -= 10;
-// $age *= 2;
+// $age -= 10;  // same as $age = $age - 10
+// $age *= 2;  // same as $age = $age * 2
 // echo $age;
 
 // number functions
 
-// echo floor($pi);
-// echo ceil($pi);
-// echo pi();
+// echo floor($pi);  // round number down
+// echo ceil($pi);  // round number up
+// echo pi();  // return value of pi
 
 // indexed arrays
 
-// $peopleOne = ['Stonks', 'Pisoros', 'Emanz'];
-// echo $peopleOne[1];
+// $peopleOne = ['Stonks', 'Pisoros', 'Emanz'];  // create indexed array
+// echo $peopleOne[1];  // access item at index 1
 
-// $peopleTwo = array('Koserf', 'Azure');
+// $peopleTwo = array('Koserf', 'Azure');  
 // echo $peopleTwo[1];
 
-// $ages = [20, 30, 40, 50];
+// $ages = [20, 30, 40, 50];  // indexed array of numbers
+// print_r($ages);  // display entire array
+
+// $ages[1] = 25;  // change value at index 1
+// print_r($ages);  // display updated array
+
+// $ages[] = 60;  // add new item to the end
 // print_r($ages);
 
-// $ages[1] = 25;
+// array_push($ages, 70);  // add item to the end of array
 // print_r($ages);
 
-// $ages[] = 60;
-// print_r($ages);
+// echo count($ages);  // count number of items in array
 
-// array_push($ages, 70);
-// print_r($ages);
-
-// echo count($ages);
-
-// $peopleThree = array_merge($peopleOne, $peopleTwo);
-// print_r($peopleThree);
+// $peopleThree = array_merge($peopleOne, $peopleTwo);  // combine two arrays
+// print_r($peopleThree);  // display combined array
 
 // associative arrays (key & value pairs)
 
-// $koserfOne = ['Koserf' => 'blue', 'Azure' => 'red', 'Stonks' => 'black'];
-// echo $koserfOne['Azure'];
-// print_r($koserfOne);
+// $koserfOne = ['Koserf' => 'blue', 'Azure' => 'red', 'Stonks' => 'black'];  // create associative array
+// echo $koserfOne['Azure'];  // access value using key 'Azure'
+// print_r($koserfOne);   // display entire associative array
 
 // $koserfTwo = array('Emanz' => 'orange', 'Pisoros' => 'purple');
-// print_r($koserfTwo);
+// print_r($koserfTwo);   // display entire array
 
-// $koserfTwo['Lee'] = 'yellow';
-// print_r($koserfTwo);
+// $koserfTwo['Lee'] = 'yellow';  // add new key and value
+// print_r($koserfTwo); 
 
-// echo count($peopleOne);
+// echo count($peopleOne);  // count items in indexed array
 
-// $koserfThree = array_merge($koserfOne, $koserfTwo);
-// print_r($koserfThree);
+// $koserfThree = array_merge($koserfOne, $koserfTwo);  // combine associative arrays
+// print_r($koserfThree);  // display combined array
 
-// muki-dimensional arrays
+// multi-dimensional arrays
 
 // $blogs = [
 // ['title' => 'koserf party', 'author' => 'koserf', 'content' => 'lorem', 'likes' => 30],
 //  ['title' => 'stonks cheats', 'author' => 'stonks', 'content' => 'lorem', 'likes' => 25],
 //  ['title' => 'azure noob', 'author' => 'azure', 'content' => 'lorem', 'likes' => 50]
 
-// ]; 
+// ];   // create multi-dimensional array
 
-// print_r($blogs);
-// print_r($blogs[1]);
-// print_r($blogs[1][1]);
-// echo $blogs[2]['author'];
-// echo count($blogs);
+// print_r($blogs);  // display entire array
+// print_r($blogs[1]);  // display second blog
+// print_r($blogs[1][1]);  // access index 1 inside second blog
+// echo $blogs[2]['author'];  // display author of third blog
+// echo count($blogs);  // count number of blogs
 
-// $blogs[] = ['title' => 'cat cafe', 'author' => 'pisoros', 'content' => 'lorem', 'likes' => 100];
+// $blogs[] = ['title' => 'cat cafe', 'author' => 'pisoros', 'content' => 'lorem', 'likes' => 100];   // add new blog to array
 
-// print_r($blogs);
-// $popped = array_pop($blogs);
-// print_r($popped);
+// print_r($blogs);  // display updated blogs
+// $popped = array_pop($blogs);   // remove last item and store it in $popped
+// print_r($popped);  // display removed item
 
 // loops
 
-// $koserf = ['koserf', 'azure', 'stonks'];
+// $koserf = ['koserf', 'azure', 'stonks'];  
 
-// for ($i = 0; $i < count($koserf); $i++) {
-//    echo $koserf[$i] . '<br />/';
+// for ($i = 0; $i < count($koserf); $i++) {  // for loop
+//    echo $koserf[$i] . '<br />/';  // display each item
 // }
 
-// foreach($koserf as $koserf){
-//   echo $koserf . '<br />';
+// foreach($koserf as $koserf){  // loop through each array item
+//   echo $koserf . '<br />';  // display current item
 // }
 
 // $products = [
@@ -149,51 +149,51 @@
 //     ['name' => 'pen', 'price' => 5],
 //     ['name' => 'paint', 'price' => 40],
 //     ['name' => 'brush', 'price' => 2]
-// ];
+// ];   // array containing product information
 
-// foreach ($products as $product) {
-//   echo $product['name'] . ' - ' . $product['price'];
-//    echo '<br />';
+// foreach ($products as $product) {   // loop through every product
+//   echo $product['name'] . ' - ' . $product['price'];  // display product name and price
+//    echo '<br />';  // line break
 // }
 
-// $i = 0;
+// $i = 0;  // starting value for counter
 
-// while ($i < count($products)) {
-//    echo $products[$i]['name'];
-//    echo '<br />';
-//    $i++;
+// while ($i < count($products)) {  // repeat while condition is true
+//    echo $products[$i]['name'];  // display product name
+//    echo '<br />';  
+//    $i++;  // increase counter by 1
 // }
 
 // comparisons booleans (true or false)
 
-// echo true; "1"
-// echo false; ""
+// echo true; "1"  // true is displayed as 1
+// echo false; ""  // false displays nothing
 
 // numbers
 
-// echo 5 < 10;
-// echo > 10;
-// echo 5 == 10;
-// echo 10 == 10;
-// echo 5 <= 5;
-// echo 5 >+ 5;
+// echo 5 < 10;  // true: 5 is less than 10
+// echo > 10;  // true: 10 is greater than 5
+// echo 5 == 10;  // false: values are not equal
+// echo 10 == 10;  // true: values are equal
+// echo 5 <= 5;  // true: 5 is less than or equal to 5
+// echo 5 >+ 5;  // true: 5 is greater than or equal to 5
 
 // strings
 
-// echo 'koserf' < 'azure';
+// echo 'koserf' < 'azure';   // compare strings alphabetically
 // echo 'koserf' > 'azure';
-// echo 'koserf' > 'Koserf';
-// echo 'stonks' == 'stonks';
-// echo 'stonks' == 'Stonks';
+// echo 'koserf' > 'Koserf';  // compare lowercase/uppercase strings
+// echo 'stonks' == 'stonks';  // true: strings are exactly the same
+// echo 'stonks' == 'Stonks';  // false: uppercase/lowercase differ
 
 // loose vs strict equal comparison
 
-// echo 5 == '5';
-// echo 5 === '5';
-// echo 5 === 5;
+// echo 5 == '5';  // true: same value, ignores data type
+// echo 5 === '5';  // false: value same but data type different
+// echo 5 === 5;  // true: same value and same data type
 
-echo true == "1";
-// echo false == "";
+// echo true == "1";  // true: loose comparison
+// echo false == "";  
 
 
 ?>
