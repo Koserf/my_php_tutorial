@@ -9,7 +9,10 @@
 <html>
 
 <?php
-include('templates/header.php'); ?>
+include('header.php'); ?>
+
+<?php
+include('footer.php'); ?>
 
 </body>
 
