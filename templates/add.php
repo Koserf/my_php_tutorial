@@ -1,6 +1,7 @@
 <?php
 
 // Check if the form is submitted using GET method
+
 // if(isset($_GET['submit'])) {
 //     echo $_GET['email'];
 //     echo $_GET['title'];
@@ -8,6 +9,7 @@
 // }
 
 // Check if the form is submitted using POST method
+
 if (isset($_POST['submit'])) {
 
     // Display the submitted email
@@ -29,21 +31,40 @@ if (isset($_POST['submit'])) {
     if (empty($_POST['email'])) {
         echo 'An email is required <br />';
     } else {
-        echo htmlspecialchars($_POST['email']);
+        $email = $_POST['email'];
+
+        // filter_var() checks if the email has a valid email format
+        // Unlike htmlspecialchars(), this validates the input
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo 'email must be a valid email address';
+        }
     }
 
     // check title
     if (empty($_POST['title'])) {
         echo 'A title is required <br />';
     } else {
-        echo htmlspecialchars($_POST['title']);
+        $title = $_POST['title'];
+
+        // preg_match() checks if the title follows the given pattern
+        // This pattern allows only letters and spaces
+        if (!preg_match('/^[a-zA-Z\s]+$/', $title)) {
+            echo 'Title must be letters and spaces only';
+        }
     }
 
     // check ingredients
     if (empty($_POST['ingredients'])) {
         echo 'At least one ingredient is required <br />';
     } else {
-        echo htmlspecialchars($_POST['ingredients']);
+        $ingredients = $_POST['ingredients'];
+
+        // preg_match() checks if ingredients follow the required format
+        // This pattern allows letters, spaces and commas
+        // Example: Cheese, Tomato, Chicken
+        if (!preg_match('/^([a-zA-Z\s]+)(,\s*[a-zA-Z\s]*)*$/', $ingredients)) {
+            echo 'Ingredients must be a comma separated list';
+        }
     }
 
 } // end of POST check
